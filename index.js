@@ -16,7 +16,7 @@ app.use("/user",userRouter)
 app.use("/notes",authenticate,NoteRouter)
 
 
-app.get("/",(res,req)=>{
+app.get("/",(req,res)=>{
     res.send("Home Page")
 })
 
