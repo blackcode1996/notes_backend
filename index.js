@@ -8,22 +8,20 @@ const {authenticate} =require("./Middleware/authenticate.middleware")
 
 const { NoteRouter } = require("./Routes/Note.route")
 
-const cors=require("cors")
-
-
 require("dotenv").config()
+
+const cors=require("cors")
 
 
 const app=express()
 
-app.use(cors)
-
 app.use(express.json())
 
+app.use(cors())
 
-let initialData=`welcome to notes app backend 🥳.\nPlease refer to the below 👇 link for proper understanding. ${`https://github.com/blackcode1996/notes_backend/blob/main/README.md`}\n Happy coding`
 
 app.get("/",(req,res)=>{
+    let initialData=`welcome to notes app backend 🥳.\nPlease refer to the below 👇 link for proper understanding. ${`https://github.com/blackcode1996/notes_backend/blob/main/README.md`}\n Happy coding`
     res.send(initialData)
 })
 
