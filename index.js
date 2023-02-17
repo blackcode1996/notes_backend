@@ -21,7 +21,7 @@ app.use(cors())
 
 
 app.get("/",(req,res)=>{
-    let initialData=`welcome to notes app backend 🥳.\nPlease refer to the below 👇 link for proper understanding. ${`https://github.com/blackcode1996/notes_backend/blob/main/README.md`}\n Happy coding`
+    let initialData=`welcome to notes app backend 🥳.`
     res.send(initialData)
 })
 
