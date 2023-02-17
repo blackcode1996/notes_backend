@@ -21,7 +21,7 @@ app.use(cors())
 
 
 app.get("/",(req,res)=>{
-    let initialData=`welcome to notes app backend 🥳.`
+    let initialData=`Welcome to notes app backend 🥳.`
     res.send(initialData)
 })
 
